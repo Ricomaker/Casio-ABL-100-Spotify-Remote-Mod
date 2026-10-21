@@ -1,3 +1,41 @@
+# Casio ABL-100 Spotify Remote Mod
+
+**A fun, experimental Android modification — more nerdy party trick than polished product.**
+
+This is my personal remix of [izivkov's Casio G-Shock Smart Sync](https://github.com/izivkov/CasioGShockSmartSync). I experimented with using my **Casio ABL-100** as a physical remote for Spotify.
+
+## What I changed
+
+- The original code I was working from used **one watch button** for the remote functionality.
+- I changed the **Android app code** so **two additional buttons that were already on the watch** could be used.
+- No physical buttons were added to the watch.
+
+## Does it work?
+
+**On my Casio ABL-100, yes — with a catch.** The remote controls worked in my testing, but Bluetooth communication could be noticeably **laggy and unreliable**.
+
+The ABL-100's Bluetooth functionality wasn't designed as a responsive, always-on music remote, so this is best treated as a playful experiment, **not** a replacement for a dedicated media controller. That hardware-design explanation is a practical interpretation of the behavior I observed, not a measured technical diagnosis.
+
+**Tested watch:** Casio ABL-100 only. I don't know whether the modifications work on other Casio models.
+
+## Code status
+
+This fork currently retains the upstream project on its `main` branch. **My modified Android source code is being prepared separately and is not yet represented by the `main` branch.** The repository will be updated when that work is reviewed and pushed. Until then, please don't interpret this README as a claim that the Spotify modifications are already available to build from `main`.
+
+## Original project and credit
+
+Built on the excellent open-source **[Casio G-Shock Smart Sync by izivkov](https://github.com/izivkov/CasioGShockSmartSync)**. The original app and its features are the work of its contributors; this is a small personal experiment on top of it.
+
+The upstream project is licensed under the **Apache License 2.0**. Its license and required attribution notices are retained. Changes to original files should be identified when redistributing the modified code.
+
+---
+
+## Original project documentation
+
+The material below is the upstream project's original README and describes **the original app**, not features I independently created or verified in my remix.
+
+---
+
 # Casio G-Shock Smart Sync
 
 <p align="center">
