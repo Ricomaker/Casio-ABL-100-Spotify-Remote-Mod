@@ -1,3 +1,29 @@
+# ABL-100 Music Remote — Android remix
+
+**This repository contains an experimental ABL-100-focused modification of [izivkov's Casio G-Shock Smart Sync](https://github.com/izivkov/CasioGShockSmartSync).** The original open-source project is credited and documented below.
+
+> **Where is the modified app?** The current remix source and its full feature guide are on the **[ABL-100 UI and music-control branch](https://github.com/Ricomaker/Casio-ABL-100-Spotify-Remote-Mod/tree/ui/abl100-clear-controls-branding)**, **not** on this default `main` branch. The branches came from different Git histories, so they have not been merged. Please do not download `main` expecting the music-control modification.
+
+## What the ABL-100 remix adds
+
+- Watch-button **play / pause**: hold bottom-right until the second beep
+- **Next track**: hold bottom-left until the second beep
+- **Quiet / loud volume toggle**: tap bottom-right to alternate between two adjustable volume presets
+- **Return to ready mode**: tap top-left
+- **Smart Android media control**: prioritizes the actively playing media session, with Spotify fallback and generic media controls when needed
+- **Background event handling** and an ABL-100-focused Android controls screen
+- **Simplified help text**, an **ABL-100 Music Remote** app name, and a neutral watch/music launcher icon
+
+**Status:** Experimental; tested only with the ABL-100. Bluetooth interactions can lag or occasionally fail. The changes are source code, not a verified public APK release.
+
+**[Browse the modified source and complete feature documentation →](https://github.com/Ricomaker/Casio-ABL-100-Spotify-Remote-Mod/tree/ui/abl100-clear-controls-branding)**
+
+**Attribution:** Based on izivkov's original project. Retain its licensing and attribution. This remix is unofficial and not affiliated with Casio or Spotify.
+
+---
+
+## Original upstream project README (reference only)
+
 # Casio G-Shock Smart Sync
 
 <p align="center">
