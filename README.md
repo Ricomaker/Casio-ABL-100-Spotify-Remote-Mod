@@ -1,3 +1,33 @@
+# ABL-100 Music Remote
+
+An experimental Android music remote for the **Casio ABL-100**, based on [izivkov's Casio G-Shock Smart Sync](https://github.com/izivkov/CasioGShockSmartSync). This branch adds an ABL-100-focused music-control interface and watch-button handling. The original project's broader feature descriptions and documentation are retained below for reference; they are **not** claims that this remix has been tested with all those models.
+
+## Features of this ABL-100 remix
+
+- **Play/pause from the watch:** hold the **bottom-right** button until the second beep.
+- **Next track:** hold the **bottom-left** button until the second beep.
+- **Two-level volume toggle:** tap the **bottom-right** button to alternate between your saved *quiet* and *loud* levels.
+- **Adjustable volume presets:** set both volume levels with sliders in the Android app. The choices are saved on the phone.
+- **Reset controls:** tap the **top-left** button to return to the ready state.
+- **Media player selection:** first targets an Android media session that is currently playing; if none is playing, checks for Spotify and then another available media session. Falls back to Android media-button events when needed. Other apps (for example YouTube) may work when they expose a compatible media session.
+- **Background button handling:** the app's action listener is initialized at application startup rather than relying on the music screen being open. Actual responsiveness still depends on Android and Bluetooth conditions.
+- **Simpler controls screen:** dedicated music controls, clear button instructions, and a new ABL-100 Music Remote name and icon.
+
+### Quick start
+
+1. Install and open this **remix build** (not the upstream release).
+2. Connect the ABL-100 using the app. Hold the **lower-left** watch button for approximately 3 seconds to initiate the normal connection, following the watch's beeps.
+3. Grant the app the necessary Bluetooth and **Notification Access** permissions for media-session control.
+4. Open **Music Remote** to set quiet and loud volume levels, then use the watch button actions above.
+
+**Status and limitations:** This is a personal experimental modification tested with the **ABL-100 only**. Bluetooth triggering can be delayed or inconsistent, and the media app sometimes affects connection behavior; temporarily pausing Spotify during initial pairing may help. The modified source is on the `abl100-local-backup` branch and UI refinements on `ui/abl100-clear-controls-branding`. These changes are not yet a separately validated public APK release. Other Casio models are not verified for the remix.
+
+**Credit and license:** Based on the original work by **izivkov**. Keep the upstream attribution, LICENSE file and license notices when redistributing. This is an unofficial community modification, not a Casio or Spotify product.
+
+---
+
+## Original project documentation (upstream reference)
+
 # Casio G-Shock Smart Sync
 
 <p align="center">
