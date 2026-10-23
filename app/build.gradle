@@ -21,7 +21,7 @@ plugins {
         }
 
         defaultConfig {
-        applicationId = "org.avmedia.gshockGoogleSync"
+            applicationId = "com.ricomaker.abl100musicremote"
         minSdk = 26
         targetSdk = 37
         versionCode = 4272
