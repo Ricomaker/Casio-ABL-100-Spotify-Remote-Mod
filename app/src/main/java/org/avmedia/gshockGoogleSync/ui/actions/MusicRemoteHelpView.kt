@@ -30,7 +30,7 @@ fun MusicRemoteHelpView() {
             HelpRow("Hold bottom-right until the second beep", "Play or pause music")
             HelpRow("Tap bottom-right button", "Toggle between quiet and loud volume")
             HelpRow("Hold bottom-left until the second beep", "Skip to the next song")
-            HelpRow("Tap top-left button", "Reset the controls")
+            HelpRow("Tap top-left button", "Return to ready mode")
 
             AppText(
                 text = "Works with supported music apps on your phone. Allow notification access for media controls to work.",
