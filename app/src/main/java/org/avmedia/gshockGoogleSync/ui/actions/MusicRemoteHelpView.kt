@@ -22,18 +22,18 @@ fun MusicRemoteHelpView() {
             modifier = Modifier.padding(16.dp)
         ) {
             AppText(
-                text = "ABL-100 Media Control Guide (Smart Prioritization)",
+                text = "Watch button controls",
                 fontSize = 18.sp,
                 fontWeight = FontWeight.Bold
             )
             
-            HelpRow("Long D (Find Phone)", "Spotify Play / Pause (Reliable)")
-            HelpRow("Short D (Bottom-Right)", "Volume Toggle (Low ↔ High)")
-            HelpRow("Long C (Bottom-Left)", "Spotify Next Track")
-            HelpRow("A1 (Top-Left)", "Clear / Return to Ready State")
+            HelpRow("Hold bottom-right until the second beep", "Play or pause music")
+            HelpRow("Tap bottom-right button", "Toggle between quiet and loud volume")
+            HelpRow("Hold bottom-left until the second beep", "Skip to the next song")
+            HelpRow("Tap top-left button", "Return to ready mode")
 
             AppText(
-                text = "Intelligent Control: Targets active players (like YouTube) first. If nothing is playing, it targets Spotify. Ensure 'Notification Access' is granted.",
+                text = "Works with supported music apps on your phone. Allow notification access for media controls to work.",
                 fontSize = 12.sp,
                 modifier = Modifier.padding(top = 16.dp)
             )

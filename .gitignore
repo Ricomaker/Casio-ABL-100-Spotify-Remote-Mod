@@ -120,3 +120,6 @@ h
 latest.txt
 notes/
 scratch/
+
+# Generated GitHub release APKs
+app/github/

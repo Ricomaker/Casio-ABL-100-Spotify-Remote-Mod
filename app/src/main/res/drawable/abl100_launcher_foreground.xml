@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Neutral ABL-100 music remote symbol: watch outline and a single music note. -->
+    <path android:fillColor="#FFFFFFFF"
+        android:pathData="M43,18 L65,18 L68,33 L68,75 L65,90 L43,90 L40,75 L40,33 Z"/>
+    <path android:fillColor="#FF182333"
+        android:pathData="M35,32 L73,32 Q77,32 77,36 L77,72 Q77,76 73,76 L35,76 Q31,76 31,72 L31,36 Q31,32 35,32 Z"/>
+    <!-- Simple eighth note; discrete head, stem and flag avoid self-intersections. -->
+    <path android:fillColor="#FFFF4B53"
+        android:pathData="M59,43 L63,43 L63,62 L59,62 Z"/>
+    <path android:fillColor="#FFFF4B53"
+        android:pathData="M59,43 C67,43 70,47 69,54 L66,54 C66,50 64,48 59,48 Z"/>
+    <path android:fillColor="#FFFF4B53"
+        android:pathData="M59,59 C56,56 50,57 48,60 C45,64 48,68 53,68 C57,68 60,65 60,62 C60,61 60,60 59,59 Z"/>
+    <path android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="1.8"
+        android:fillColor="#00000000"
+        android:pathData="M39,39 L49,39 M39,44 L47,44 M39,49 L46,49"/>
+</vector>

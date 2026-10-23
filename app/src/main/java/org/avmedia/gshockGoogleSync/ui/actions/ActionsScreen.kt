@@ -117,7 +117,7 @@ private fun ActionsContent(
         Spacer(modifier = Modifier.height(24.dp))
 
         AppButton(
-            text = "Exit App",
+            text = "Close app screen",
             onClick = { (context as? Activity)?.finish() },
             modifier = Modifier.fillMaxWidth()
         )
@@ -133,11 +133,11 @@ fun VolumeSettings(
 ) {
     AppCard(modifier = Modifier.fillMaxWidth()) {
         Column(modifier = Modifier.padding(16.dp)) {
-            AppTextLarge(text = "Volume Toggle Levels")
+            AppTextLarge(text = "Volume settings")
             
             Spacer(modifier = Modifier.height(8.dp))
             
-            AppText(text = "Low Volume: ${(volLow * 100).toInt()}%")
+            AppText(text = "Quiet volume: ${(volLow * 100).toInt()}%")
             Slider(
                 value = volLow,
                 onValueChange = onLowChange,
@@ -146,7 +146,7 @@ fun VolumeSettings(
 
             Spacer(modifier = Modifier.height(8.dp))
 
-            AppText(text = "High Volume: ${(volHigh * 100).toInt()}%")
+            AppText(text = "Loud volume: ${(volHigh * 100).toInt()}%")
             Slider(
                 value = volHigh,
                 onValueChange = onHighChange,

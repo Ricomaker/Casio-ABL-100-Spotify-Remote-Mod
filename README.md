@@ -1,3 +1,65 @@
+# ABL-100 Music Remote
+
+An experimental Android music remote for the **Casio ABL-100**, based on [izivkov's Casio G-Shock Smart Sync](https://github.com/izivkov/CasioGShockSmartSync). This branch adds an ABL-100-focused music-control interface and watch-button handling. The original project's broader feature descriptions and documentation are retained below for reference; they are **not** claims that this remix has been tested with all those models.
+
+## ⚠️ Experimental — important limitations
+
+This is a hobby project and a fun way to control Android music from a Casio ABL-100, **not a fast or fully reliable replacement for your phone's music controls**.
+
+- **Volume toggle:** In testing on one ABL-100, allow approximately **10–15 seconds between volume commands**. Repeated presses too quickly may seem to do nothing.
+- **Bluetooth responsiveness:** Some watch commands may be delayed or inconsistent. The exact behavior may vary by phone and connection conditions.
+- **Compatibility:** Tested on the **Casio ABL-100 only**. Other Casio models and Android phones have not been thoroughly tested.
+
+Think of it as a fun experimental mod — more of a party trick than an everyday remote.
+
+## Features of this ABL-100 remix
+
+- **Play/pause from the watch:** hold the **bottom-right** button until the second beep.
+- **Next track:** hold the **bottom-left** button until the second beep.
+- **Two-level volume toggle:** tap the **bottom-right** button to alternate between your saved *quiet* and *loud* levels.
+- **Adjustable volume presets:** set both volume levels with sliders in the Android app. The choices are saved on the phone.
+- **Reset controls:** tap the **top-left** button to return to the ready state.
+- **Media player selection:** first targets an Android media session that is currently playing; if none is playing, checks for Spotify and then another available media session. Falls back to Android media-button events when needed. Other apps (for example YouTube) may work when they expose a compatible media session.
+- **Background button handling:** the app's action listener is initialized at application startup rather than relying on the music screen being open. Actual responsiveness still depends on Android and Bluetooth conditions.
+- **Simpler controls screen:** dedicated music controls, clear button instructions, and a new ABL-100 Music Remote name and icon.
+
+### Download and installation tips
+
+1. **Android only:** Download the signed `ABL100-Music-Remote.apk` from the [latest GitHub release](https://github.com/Ricomaker/Casio-ABL-100-Spotify-Remote-Mod/releases/latest). Open the downloaded file and, if Android asks, allow installation from that browser or file manager.
+2. **Bluetooth:** Grant the requested Nearby devices/Bluetooth permissions. To initiate a normal watch connection, hold the ABL-100's **lower-left button until the second beep**.
+3. **Notification access:** In Android Settings, enable **Notification access** for *ABL-100 Music Remote*. This lets the app find active music sessions, including Spotify and compatible players.
+4. **Battery restrictions:** For more reliable background controls, consider setting this app's battery usage to **Unrestricted** or **Don't optimize** (the name and location vary by phone). This can use a little more battery.
+5. **If Spotify interferes when entering the watch's settings:** Fully close Spotify before trying to enter the settings on the ABL-100. Pausing Spotify alone may not help because a watch button press can start playback again. Reopen Spotify after you finish in the watch's settings. Check that the app has the requested permissions.
+6. **Allow time between commands:** In particular, wait approximately **10–15 seconds between volume-toggle presses** based on testing on one ABL-100. Other commands may also be delayed or inconsistent.
+
+**Updates:** Keep the same app installed and install newer releases over it when available. Do not uninstall just to update unless troubleshooting requires it; uninstalling may erase local settings. The publicly signed remix has its own Android app identity and may install alongside an older/debug build.
+
+### Does the app need to stay open?
+
+**No — you normally do not need to keep the app visible.** The remix initializes its watch-button listener at app startup, allowing music controls to work while the app is minimized or the phone screen is locked, provided Android and Bluetooth keep the connection/background service active.
+
+- **App on screen or minimized:** Controls should work when the watch is connected.
+- **Phone locked:** Controls should generally still work.
+- **App swiped away:** Behavior varies by Android version and phone manufacturer; background restrictions may interrupt it.
+- **App force-stopped:** Controls generally stop until you open the app again.
+
+For better reliability, grant the requested Bluetooth and Notification Access permissions and, if necessary, set the app's battery usage to **Unrestricted** / **Don't optimize** in Android Settings (this may increase battery use). To test, connect the watch, return to your home screen, lock your phone, and try play/pause. Background behavior has not been verified across all Android phones.
+
+### Quick start
+
+1. Install and open this **remix build** (not the upstream release).
+2. Connect the ABL-100 using the app. Hold the **lower-left** watch button for approximately 3 seconds to initiate the normal connection, following the watch's beeps.
+3. Grant the app the necessary Bluetooth and **Notification Access** permissions for media-session control.
+4. Open **Music Remote** to set quiet and loud volume levels, then use the watch button actions above.
+
+**Status and limitations:** This is a personal experimental modification tested with the **ABL-100 only**. Bluetooth triggering can be delayed or inconsistent, and Spotify can interfere when trying to enter the watch's settings; fully closing Spotify first may help, while pausing it alone can allow watch commands to restart playback. The modified source is on the `abl100-local-backup` branch and UI refinements on `ui/abl100-clear-controls-branding`. A signed APK is available as [v1.0.0](https://github.com/Ricomaker/Casio-ABL-100-Spotify-Remote-Mod/releases/tag/v1.0.0), tested by the maintainer on their own ABL-100; other phones and watch models are not yet broadly verified. Other Casio models are not verified for the remix.
+
+**Credit and license:** Based on the original work by **izivkov**. Keep the upstream attribution, LICENSE file and license notices when redistributing. This is an unofficial community modification, not a Casio or Spotify product.
+
+---
+
+## Original project documentation (upstream reference)
+
 # Casio G-Shock Smart Sync
 
 <p align="center">

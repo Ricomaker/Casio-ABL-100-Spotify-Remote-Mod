@@ -1,5 +1,6 @@
 package org.avmedia.gshockGoogleSync.ui.settings
 
+import AppText
 import android.annotation.SuppressLint
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -20,11 +21,14 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
+import androidx.compose.ui.text.font.FontWeight
 import androidx.constraintlayout.compose.ConstraintLayout
 import androidx.constraintlayout.compose.Dimension
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import org.avmedia.gshockGoogleSync.R
 import org.avmedia.gshockGoogleSync.theme.GShockSmartSyncTheme
+import org.avmedia.gshockGoogleSync.ui.common.AppCard
 import org.avmedia.gshockGoogleSync.ui.common.AppSnackbar
 import org.avmedia.gshockGoogleSync.ui.common.ButtonData
 import org.avmedia.gshockGoogleSync.ui.common.ButtonsRow
@@ -107,6 +111,25 @@ fun SettingsList() {
     }
 
     Column(modifier = Modifier) {
+        AppCard(modifier = Modifier.fillMaxWidth().padding(horizontal = 12.dp, vertical = 8.dp)) {
+            Column(modifier = Modifier.padding(12.dp)) {
+                AppText(
+                    text = "Music remote in the background",
+                    fontWeight = FontWeight.Bold,
+                    fontSize = 16.sp
+                )
+                AppText(
+                    text = "You do not need to keep the app open on screen. Watch music controls should also work when the app is minimized or your phone is locked, as long as Android allows background operation.",
+                    fontSize = 14.sp,
+                    modifier = Modifier.padding(top = 8.dp)
+                )
+                AppText(
+                    text = "For better reliability, allow Bluetooth and Notification Access, and consider setting the app's battery usage to Unrestricted / Don't optimize in your phone's Android Settings. Swiping the app away may interrupt controls; force-stopping usually stops them until you reopen the app.",
+                    fontSize = 12.sp,
+                    modifier = Modifier.padding(top = 8.dp)
+                )
+            }
+        }
         WatchFeature(id = "locale_card") {
             Locale(settingsViewModel::onSettingUpdated)
         }
