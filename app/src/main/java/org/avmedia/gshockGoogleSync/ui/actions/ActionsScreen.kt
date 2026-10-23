@@ -117,7 +117,7 @@ private fun ActionsContent(
         Spacer(modifier = Modifier.height(24.dp))
 
         AppButton(
-            text = "Exit App",
+            text = "Close app screen",
             onClick = { (context as? Activity)?.finish() },
             modifier = Modifier.fillMaxWidth()
         )
