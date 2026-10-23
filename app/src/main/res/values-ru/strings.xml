@@ -1,0 +1,179 @@
+<resources>
+
+    <string name="events">События</string>
+    <string name="alarms">Будильники</string>
+    <string name="time">Время</string>
+    <string name="steps">Шаги</string>
+    <string name="send_alarms_to_watch">Отправить на\nчасы</string>
+
+    <string name="send_alarms_to_phone">Отправить на\nтелефон</string>
+    <string name="send_events_to_watch">Отправить на часы\nНапоминания</string>
+    <string name="connection_screen_info"><![CDATA[
+    Чтобы перейти к следующему экрану, нажмите и удерживайте <b>НИЖНЮЮ ЛЕВУЮ</b> кнопку на часах в течение 3 секунд.
+    После второго двойного звукового сигнала приложение отобразит экран настройки времени.
+
+    <p>Чтобы запустить действия, выбранные на экране <b>Действия</b>, кратковременно нажмите <b>НИЖНЮЮ ПРАВУЮ</b> кнопку. Действия — это приложения на вашем телефоне, например <b>Сделать фото</b>.
+    Используя действия, часы работают как пульт дистанционного управления для вашего телефона.</p>
+    ]]></string>
+
+    <string name="actions">Действия</string>
+
+    <string name="front_cam">Передняя камера</string>
+    <string name="back_cam">Задняя камера</string>
+
+    <string name="info">Информация</string>
+    <string name="daily">Ежедневно</string>
+
+    <string name="watch_alarms">Будильники на часах</string>
+    <string name="signal_chime">Сигнал (звонок)</string>
+
+    <string name="local_time">Местное время</string>
+    <string name="send_to_watch">Отправить на\nчасы</string>
+
+    <string name="home_time">Домашнее время</string>
+    <string name="running_actions">Запущенные действия</string>
+
+    <string name="settings">Настройки</string>
+
+    <string name="auto_configure_settings">Авто\nзаполнение</string>
+    <string name="time_format">Формат времени</string>
+    <string name="_12h">12ч</string>
+    <string name="_24h">24ч</string>
+    <string name="date_format">Формат даты</string>
+    <string name="language">Язык</string>
+    <string name="operational_sound">Звук кнопки</string>
+    <string name="power_saving_mode">Режим энергосбережения</string>
+    <string name="select_language">Выбрать язык</string>
+    <string name="auto_fill_help"><![CDATA[Автозаполнение значений происходит следующим образом:
+        <li>Формат времени/даты и язык получаются из настроек телефона.</li>
+        <li>Звук кнопки отключается, если телефон в режиме "Не беспокоить", включается в остальных случаях.</li>
+        <li>Режим энергосбережения включается, если уровень заряда батареи 15%% или меньше.</li>
+        Примечание: <i>Значения не изменятся, пока не будут отправлены снова, даже если условия изменятся (например, режим "Не беспокоить" включен/выключен).</i>
+    ]]>
+    </string>
+    <string name="cancel">Отмена</string>
+    <string name="ok">ОК</string>
+
+    <string name="info_home_time">
+        <![CDATA[<b>Домашнее время</b> показывает часовой пояс ваших часов.
+        Когда приложение устанавливает время на часах (вручную или автоматически), оно также устанавливает <b>Домашнее время</b>,
+        <b>Смещение времени</b> и <b>Летнее время</b> (если применимо) для текущего часового пояса. Таким образом, вам не нужно менять
+        <b>Мировое время</b> и <b>Домашнее время</b> при путешествии в другой часовой пояс.]]>
+    </string>
+    <string name="time_adjustment_info"><![CDATA[
+    <li><b>Настройка времени</b> позволяет приложению автоматически обновлять время на часах 4 раза в день.</li>
+    <li>Одновременно приложение обновляет <b>Напоминания (События)</b> на часах из вашего <b>Google Календаря</b>, если активировано действие <b>Установить напоминания из Google Календаря</b>.</li>
+    ]]></string>
+
+    <string name="auto_light">Автоподсветка</string>
+
+    <string name="illumination_period">Период подсветки</string>
+    <string name="mm_dd">ММ:ДД</string>
+    <string name="dd_mm">ДД:ММ</string>
+    <string name="time_adjustment">Настройка времени</string>
+    <string name="notify_me">Уведомить меня</string>
+    <string name="timer">Таймер</string>
+    <string name="no_watch">Нет часов</string>
+    <string name="set_time">Установить время</string>
+    <string name="find_phone">Найти телефон</string>
+    <string name="set_reminders">Напоминания из\nGoogle Календаря</string>
+    <string name="take_photo">Сделать фото</string>
+    <string name="toggle_flashlight">Фонарик</string>
+    <string name="start_voice_assistant">Голосовой помощник</string>
+    <string name="next_track">Следующий трек</string>
+    <string name="play_pause">Воспроизведение/Пауза</string>
+    <string name="play_pause_info"><![CDATA[Переключает воспроизведение и паузу для текущего медиаплеера на вашем телефоне (Spotify, YouTube и т. д.).]]></string>
+    <string name="emergency_actions">Экстренные действия:</string>
+    <string name="make_phonecall">Позвонить</string>
+    <string name="adjustment_time_info"><![CDATA[
+    <li>Автоматическая корректировка времени происходит 4 раза в день, примерно после 12:00, 6:00, 12:00 и 18:00.</li>
+    <li>Эта настройка определяет количество минут после часа, когда будет происходить корректировка времени. Например, если вы установите значение 25, корректировка времени будет происходить в 12:25, 6:25, 12:25 и 18:25.</li>
+    <li>Если у вас несколько часов, вы можете контролировать время их настройки индивидуально.</li>
+]]></string>
+    <string name="adjustment_time_minutes">Когда выполнить\n(минуты после часа)</string>
+    <string name="skip_to_next_track_info"><![CDATA[
+    Если вы проигрываете музыку или видео в медиаплеере, таком как Spotify, YouTube или YTMusic на вашем телефоне, это действие пропустит текущую песню или видео.
+    Оно также работает с Android Auto
+]]></string>
+    <string name="set_prayer_alarms">Молитвенные\nбудильники</string>
+    <string name="prayer_times_info"><![CDATA[
+    <li>Это действие установит 5 будильников на часах для мусульманских молитв <b>Фаджр</b>, <b>Духр</b>, <b>Аср</b>, <b>Магриб</b> и <b>Иша</b>.</li>
+    <li>Время молитв зависит от вашего местоположения и текущей даты, поэтому для наибольшей точности выполняйте это действие ежедневно.
+    Если это действие включено, будильники также будут автоматически обновляться во время автокорректировки времени, 4 раза в день.</li>
+    <li>Для расчета времени используются следующие методы в зависимости от вашего местоположения:
+        <b>СЕВЕРНАЯ АМЕРИКА</b>,
+        <b>ДИЯНЕТ</b>,
+        <b>ЕГИПЕТСКИЙ</b>,
+        <b>ДУБАЙ</b>,
+        <b>УММ АЛЬ-КУРА</b>,
+        <b>КАТАР</b>,
+        <b>СИНГАПУР</b>,
+        <b>КУВЕЙТ</b> и
+        <b>МУСУЛЬМАНСКАЯ МИРОВАЯ ЛИГА</b> везде.
+    </li>
+    <li>Для предложений и исправлений свяжитесь с <a href="mailto:izivkov@gmail.com">izivkov@gmail.com</a></li>
+]]></string>
+
+    <string name="enter_timer_time">Введите время таймера</string>
+    <string name="max_reminders_reached">Достигнут максимальный лимит напоминаний, пожалуйста, отключите некоторые, прежде чем выбрать новые</string>
+
+    <string name="fine_adjustment_info"><![CDATA[
+При установке времени на некоторых моделях часов может быть небольшое отклонение на несколько секунд. Эта настройка позволяет точно настроить корректировку времени.
+Значение, в миллисекундах, добавляется к времени, отправленному из приложения на часы. Вы можете установить значения от -5000 до 5000. Например,
+если ваши часы на 2,5 секунды опережают точное время, установите это значение на -2500 для точной синхронизации.
+]]></string>
+    <string name="required_permissions_denied_cannot_access_screen">Необходимые разрешения отклонены. Невозможно получить доступ к экрану!</string>
+    <string name="required_permissions_denied_cannot_access_actions">Необходимые разрешения отклонены. Невозможно получить доступ к действиям.</string>
+    <string name="calendar_permission_denied_cannot_access_events">Разрешение на доступ к календарю отклонено. Невозможно получить доступ к событиям.</string>
+    <string name="clear_app_storage_from_android_setting_and_restart_the_app_to_add_permissions">"Очистите данные приложения в настройках Android и перезапустите приложение для добавления разрешений."</string>
+    <string name="phone_number">Номер телефона</string>
+    <string name="enter_phone_number">Введите номер телефона</string>
+    <string name="when_to_run">Когда выполнять</string>
+    <string name="minutes_between_0_and_59">Минуты от 0 до 59</string>
+    <string name="fine_adjustment">Точная настройка</string>
+    <string name="ms_between_10000_and_10000">мс от -10000 до 10000</string>
+    <string name="sending_time_to_watch">Отправка времени на часы…</string>
+    <string name="time_set">Время установлено</string>
+    <string name="apierror_ensure_the_official_g_shock_app_is_not_running">ApiError! Убедитесь, что официальное приложение G-Shock не работает.</string>
+    <string name="bluetooth_is_not_enabled">Bluetooth не включен.</string>
+    <string name="disconnected_due_to_inactivity">Отключено из-за бездействия.</string>
+    <string name="when_found_lift_phone_to_stop_ringing">Когда найдете, поднимите телефон, чтобы прекратить звонить</string>
+    <string name="voice_assistant_not_available_on_this_device">Голосовой помощник недоступен на этом устройстве!</string>
+    <string name="cannot_go_to_next_track">Невозможно перейти к следующему треку!</string>
+    <string name="image_captured">Изображение снято: %1$s</string>
+
+    <string name="camera_capture_error">Ошибка съемки камеры: %1$s</string>
+    <string name="flashlight_not_available">Фонарик недоступен</string>
+    <string name="unable_to_get_default_sound_uri">Не удалось получить URI звука по умолчанию</string>
+    <string name="alarms_set_to_watch">Будильники настроены на часы</string>
+
+    <string name="reminders_sent_to_watch">Напоминания отправлены на часы</string>
+
+    <string name="settings_sent_to_watch">Настройки отправлены на часы</string>
+    <string name="sorry_your_device_does_not_support_bluetooth_exiting">Извините, ваше устройство не поддерживает Bluetooth. Закрытие…</string>
+    <string name="permission_required_to_turn_on_bluetooth">Требуется разрешение для включения Bluetooth.</string>
+    <string name="you_have_no_permissions_to_turn_on_bluetooth_please_turn_it_on_manually">У вас нет разрешений для включения Bluetooth. Пожалуйста, включите его вручную.</string>
+    <string name="permissions_are_permanently_denied_please_enable_them_in_the_app_settings">Разрешения навсегда отклонены. Пожалуйста, включите их в настройках приложения.</string>
+    <string name="you_have_not_given_permission_to_to_run_action">Вы не дали разрешение на выполнение действия %1$s.</string>
+    <string name="timer_set">Таймер установлен</string>
+    <string name="press_and_hold_for_3_seconds">Удерживать\n3 сек</string>
+    <string name="short_press_to_run_actions">Нажать для\nдействий</string>
+
+    <string name="cover_hold_to_unlock">Удерживайте для разблокировки</string>
+    <string name="cover_connected">Подключено</string>
+    <!-- "ч" = "час" (hour) -->
+    <string name="find_phone_instruction">Чтобы выполнить действия, запустите функцию «Найти телефон» на часах</string>
+    <string name="actions_saved">Действия сохранены</string>
+    <string name="press_and_hold_connection_button_to_continue">Нажмите и удерживайте кнопку подключения (обычно НИЖНЯЯ ЛЕВАЯ) на часах в течение 3 секунд для сопряжения.</string>
+    <string name="looking_for_a_device">Поиск устройства.</string>
+    <string name="add_watch">Добавить часы</string>
+    <string name="local_solar_time">Местное солнечное время</string>
+    <string name="local_mean_time">Местное среднее время</string>
+    <string name="sidereal_time">Звездное время</string>
+    <string name="time_zone_info"><![CDATA[
+        <li><b>Системное:</b> Использовать текущий часовой пояс телефона.</li>
+        <li><b>Местное среднее время:</b> Рассчитывается на основе вашей долготы. Один градус равен 4 минутам смещения относительно UTC.</li>
+        <li><b>Местное солнечное время:</b> Рассчитывается на основе положения солнца (Уравнение времени). Полдень — это когда солнце находится в высшей точке.</li>
+        <li><b>Звездное время:</b> Рассчитывается на основе вращения Земли относительно звезд. Звездные сутки примерно на 4 минуты короче солнечных.</li>
+    ]]></string>
+</resources>

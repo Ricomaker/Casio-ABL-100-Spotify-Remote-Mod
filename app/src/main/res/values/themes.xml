@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- res/values/themes.xml -->
+    <style name="Theme.NavigationBarMedium" parent="android:Theme.Material.Light.NoActionBar">
+    </style>
+
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/splash_background</item>
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
+        <item name="postSplashScreenTheme">@style/Theme.NavigationBarMedium</item>
+    </style>
+</resources>

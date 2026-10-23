@@ -1,0 +1,192 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name" translatable="false">ABL-100 Media Control</string>
+    <string name="events">Events</string>
+    <string name="alarms">Alarms</string>
+    <string name="time">Time</string>
+    <string name="steps">Steps</string>
+    <string name="send_alarms_to_watch">Send to\n Watch</string>
+    <string name="send_alarms_to_phone">Send to\nPhone</string>
+    <string name="send_events_to_watch">Send to Watch\n Reminders</string>
+    <string name="connection_screen_info"><![CDATA[
+
+    To proceed to the next screen, press and hold the <b>LOWER-LEFT</b> button on the watch for 3 seconds.
+    After the second double-beep, the app will display the remote control screen.
+
+    <p>To run Actions selected in the <b>Music Remote</b> screen, short-press the <b>LOWER-RIGHT</b> button.</p>
+
+    <p><b>Tip:</b> If you have trouble connecting, try pausing or closing Spotify temporarily until the connection is established.</p>
+    ]]></string>
+
+
+
+    <string name="actions">Music Remote</string>
+
+    <string name="front_cam">Front Cam</string>
+    <string name="back_cam">Back Cam</string>
+
+    <string name="info">Info</string>
+    <string name="daily">Daily</string>
+
+    <string name="watch_alarms">Watch Alarms</string>
+    <string name="signal_chime">Signal (chime)</string>
+
+    <string name="local_time">Local Time</string>
+    <string name="local_solar_time">Local Solar Time</string>
+    <string name="local_mean_time">Local Mean Time</string>
+    <string name="sidereal_time">Sidereal Time</string>
+    <string name="time_zone_info"><![CDATA[
+        <li><b>System:</b> Use the phone\'s current time zone.</li>
+        <li><b>Local Mean Time:</b> Calculated based on your longitude. One degree equals 4 minutes of offset from UTC.</li>
+        <li><b>Local Solar Time:</b> Calculated based on the sun\'s position (Equation of Time). Noon is when the sun is at its highest point.</li>
+        <li><b>Sidereal Time:</b> Calculated based on the Earth\'s rotation relative to the stars. A sidereal day is about 4 minutes shorter than a solar day.</li>
+    ]]></string>
+    <string name="send_to_watch">Send to\nWatch</string>
+
+    <string name="home_time">Home Time</string>
+    <string name="running_actions">Running Actions</string>
+
+    <string name="settings">Settings</string>
+
+    <string name="auto_configure_settings">Auto Fill\nValues</string>
+    <string name="font" translatable="false">Font</string>
+    <string name="time_format">Time Format</string>
+    <string name="_12h">12h</string>
+    <string name="_24h">24h</string>
+    <string name="date_format">Date Format</string>
+    <string name="language">Language</string>
+    <string name="operational_sound">Button Operation Tone</string>
+    <string name="power_saving_mode">Power Saving Mode</string>
+    <string name="select_language">Select Language</string>
+    <string name="auto_fill_help"><![CDATA[The auto-fill values are derived as follows:
+        <li>Time/Date format and Language, are obtained from the Phone\'s setting.</li>
+        <li>Button tone is turned OFF if the phone is in DnD mode, ON otherwise.</li>
+        <li>Power Saving will be set to ON if the battery\'s level is at 15%% or less.</li>
+        Note: <i>The values will not change until sent again, even if the conditions change (i.e DnD is turned ON/OFF)</i>
+        ]]>
+    </string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+
+    <string name="info_home_time">
+        <![CDATA[<b>Home Time</b> shows the watch\'s time zone.
+        When the app sets the watch\'s time (either manually or automatically), it will also set the <b>Home Time,
+        Time Offset</b> and <b>DST</b> (if applicable) to the current time zone. So there is no need for swapping your <b>World Time</b> and <b>Home Time</b>
+        when travelling to another timezone.]]>
+    </string>
+    <string name="time_adjustment_info" ><![CDATA[
+    <li><b>Time Adjustment</b> setting enables the App to automatically update the watch\'s time 4 times per day.</li>
+    <li>At the same time, the App will update the watch\'s <b>Reminders (Events)</b> from your <b>Google Calendar</b> if the <b>Set Reminders from Google Calendar</b> action is enabled</li>
+    ]]></string>
+
+    <string name="auto_light">Auto Light</string>
+
+    <string name="illumination_period">Illumination Period</string>
+    <string name="mm_dd">MM:DD</string>
+    <string name="dd_mm">DD:MM</string>
+    <string name="time_adjustment">Time Adjustment</string>
+    <string name="notify_me">Notify me</string>
+    <string name="timer">Timer</string>
+
+    <string name="no_watch">No Watch</string>
+    <string name="set_time">Set Time</string>
+    <string name="find_phone">Find Phone</string>
+    <string name="set_reminders">Set Reminders from\nGoogle Calendar</string>
+
+    <string name="take_photo">Take a photo</string>
+    <string name="toggle_flashlight">Toggle Flashlight</string>
+    <string name="start_voice_assistant">Start Voice Assist</string>
+    <string name="next_track">Skip to next track</string>
+    <string name="play_pause">Play/Pause</string>
+    <string name="play_pause_info"><![CDATA[
+        Toggles between play and pause for the current media player on your phone (Spotify, YouTube, etc.).
+        ]]></string>
+    <string name="emergency_actions">Emergency Actions:</string>
+    <string name="make_phonecall">Make a phone call</string>
+    <string name="adjustment_time_info"><![CDATA[
+        <li>Automatic time adjustment occurs 4 times per day, sometime after the hours of 12:00AM, 6:00AM, 12:00PM and 6:00PM.</li>
+        <li>This setting sets the number of minutes after the hour when time adjustment occurs. So if you set this value to 25, time adjustment will happen at 12:25AM, 6:25AM, 12:25PM and 6:25PM.</li>
+        <li>If you have multiple watches, you can control when to set their time individually.</li>
+        ]]></string>
+    <string name="adjustment_time_minutes">When to run\n(minutes after hour)</string>
+    <string name="skip_to_next_track_info"><![CDATA[
+        If you are playing music or a video in a media player such as Spotify, YouTube, or YTMusic on your phone, this action will skip to the next song or video.
+        It also works with Android Auto
+        ]]></string>
+    <string name="set_prayer_alarms">Prayer Alarms</string>
+    <string name="prayer_times_info"><![CDATA[
+        <li>This action will set the 5 alarms on the watch to the Muslim prayers <b>Fajr</b>, <b>Dhuhr</b>, <b>Asr</b>, <b>Maghrib</b>, and <b>Isha</b> times.</li>
+        <li>The times vary based on your location and current date, so for best accuracy, run this action daily.
+        If this action is enabled, the alarms will also be automatically updated during the auto-time adjustment, 4 times per day.</li>
+        <li>The following calculation methods are used, based on your location:
+            <b>NORTH AMERICA</b>,
+            <b>DİYANET</b>,
+            <b>EGYPTIAN</b>,
+            <b>DUBAI</b>,
+            <b>UMM AL QURA</b>,
+            <b>QATAR</b>,
+            <b>SINGAPORE</b>,
+            <b>KUWAIT</b> and
+            <b>MUSLIM WORLD LEAGUE</b> everywhere else.
+        </li>
+        <li>For suggestions and corrections contact <a href="mailto:izivkov@gmail.com">izivkov@gmail.com</a></li>
+    ]]></string>
+
+    <string name="enter_timer_time">Enter Timer Time</string>
+    <string name="max_reminders_reached">Maximum number of reminders reached, Please disable some before selecting new ones</string>
+
+    <string name="fine_adjustment_info"><![CDATA[
+    When setting the time, some watch models may display a time that is slightly off by a few seconds. This setting allows you to fine-tune the time adjustment.
+    The value, in milliseconds, is added to the time sent from the app to the watch. You can set values between -5000 and 5000. For example,
+    if your watch is 2.5 seconds ahead of the actual time, set this value to -2500 to sync it accurately.
+    ]]></string>
+    <string name="required_permissions_denied_cannot_access_screen">Required permissions denied. Cannot access screen!</string>
+    <string name="required_permissions_denied_cannot_access_actions">Required permissions denied. Cannot access Actions.</string>
+    <string name="calendar_permission_denied_cannot_access_events">Calendar permission denied. Cannot access Events.</string>
+    <string name="clear_app_storage_from_android_setting_and_restart_the_app_to_add_permissions">" Clear app storage from Android Setting and restart the app to add permissions."</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="enter_phone_number">Enter Phone Number</string>
+    <string name="when_to_run">When to run</string>
+    <string name="minutes_between_0_and_59">Minutes between 0 and 59</string>
+    <string name="fine_adjustment">Fine Adjustment</string>
+    <string name="ms_between_10000_and_10000">ms between -10000 and 10000</string>
+    <string name="sending_time_to_watch">Sending time to watch…</string>
+    <string name="time_set">Time Set</string>
+    <string name="apierror_ensure_the_official_g_shock_app_is_not_running">ApiError! Ensure the official manufacturer app is not running.</string>
+    <string name="bluetooth_is_not_enabled">Bluetooth is not enabled.</string>
+    <string name="disconnected_due_to_inactivity">Disconnected due to inactivity.</string>
+    <string name="when_found_lift_phone_to_stop_ringing">When found, lift phone to stop ringing</string>
+    <string name="voice_assistant_not_available_on_this_device">Voice Assistant not available on this device!</string>
+    <string name="cannot_go_to_next_track">Cannot go to Next Track!</string>
+    <string name="image_captured">Image captured: %1$s</string>
+
+    <string name="camera_capture_error">Camera capture error: %1$s</string>
+    <string name="flashlight_not_available">Flashlight not available</string>
+    <string name="unable_to_get_default_sound_uri">Unable to get default sound URI</string>
+    <string name="alarms_set_to_watch">Alarms Set to Watch</string>
+
+    <string name="reminders_sent_to_watch">Reminders sent to watch</string>
+
+    <string name="settings_sent_to_watch">Settings Sent to Watch</string>
+    <string name="sorry_your_device_does_not_support_bluetooth_exiting">Sorry, your device does not support Bluetooth. Exiting…</string>
+    <string name="permission_required_to_turn_on_bluetooth">Permission required to turn on Bluetooth.</string>
+    <string name="you_have_no_permissions_to_turn_on_bluetooth_please_turn_it_on_manually">You have no permissions to turn on Bluetooth. Please turn it on manually.</string>
+    <string name="permissions_are_permanently_denied_please_enable_them_in_the_app_settings">Permissions are permanently denied. Please enable them in the app settings.</string>
+    <string name="you_have_not_given_permission_to_to_run_action">You have not given permission to run action %1$s.</string>
+    <string name="timer_set">Timer Set</string>
+    <string name="press_and_hold_for_3_seconds">Press and\nhold for 3\nseconds</string>
+    <string name="short_press_to_run_actions">Short-press\nto run\nActions</string>
+
+    <string name="cover_hold_to_unlock">Hold to unlock</string>
+    <string name="cover_connected">Connected</string>
+
+    <string name="find_phone_instruction">To run actions, start the \"Find Phone\" function on the watch</string>
+    <string name="actions_saved">Actions Saved</string>
+    <string name="press_and_hold_connection_button_to_continue">Press and hold the CONNECTION button (usually BOTTOM-LEFT) on your ABL-100 watch for 3 seconds to pair.</string>
+    <string name="looking_for_a_device">Looking for a device.</string>
+    <string name="add_watch">Add Watch</string>
+    
+    <!-- Pairing error messages -->
+    <string name="pairing_failed_generic" translatable="false">Pairing failed: %1$s. Please try again.</string>
+    <string name="pairing_activity_finishing" translatable="false">Cannot start pairing: Activity is closing. Please try again.</string>
+
+</resources>

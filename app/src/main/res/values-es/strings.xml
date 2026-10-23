@@ -1,0 +1,181 @@
+<resources>
+
+    <string name="events">Eventos</string>
+    <string name="alarms">Alarmas</string>
+    <string name="time">Hora</string>
+    <string name="steps">Pasos</string>
+    <string name="send_alarms_to_watch">Enviar a\n Reloj</string>
+
+    <string name="send_alarms_to_phone">Enviar al\nTeléfono</string>
+    <string name="send_events_to_watch">Enviar Recordatorios \nal Reloj</string>
+    <string name="connection_screen_info"><![CDATA[
+    Para continuar a la siguiente pantalla, mantén presionado el botón <b>INFERIOR IZQUIERDO</b> del reloj durante 3 segundos.
+    Después del segundo pitido doble, la app mostrará la pantalla de ajuste de hora.
+
+    <p>Para ejecutar las Acciones seleccionadas en la pantalla de <b>Acciones</b>, pulsa brevemente el botón <b>INFERIOR DERECHO</b>. Las acciones son aplicaciones en tu teléfono, como <b>Tomar una foto</b>.
+    Mediante estas acciones, el reloj actúa como un control remoto para tu teléfono.</p>
+    ]]></string>
+
+    <string name="actions">Acciones</string>
+
+    <string name="front_cam">Cámara frontal</string>
+    <string name="back_cam">Cámara trasera</string>
+
+    <string name="info">Información</string>
+    <string name="daily">Diaria</string>
+
+    <string name="watch_alarms">Alarmas del reloj</string>
+    <string name="signal_chime">Señal horaria</string>
+
+    <string name="local_time">Hora local</string>
+    <string name="send_to_watch">Enviar al\nReloj</string>
+
+    <string name="home_time">Hora local</string>
+    <string name="running_actions">Acciones en ejecución</string>
+
+    <string name="settings">Configuraciones</string>
+
+    <string name="auto_configure_settings">Auto\nrrellenar</string>
+    <string name="time_format">Formato de hora</string>
+    <string name="_12h">12h</string>
+    <string name="_24h">24h</string>
+    <string name="date_format">Formato de fecha</string>
+    <string name="language">Idioma</string>
+    <string name="operational_sound">Tono de operación de botón</string>
+    <string name="power_saving_mode">Modo de ahorro de energía</string>
+    <string name="select_language">Seleccionar idioma</string>
+    <string name="auto_fill_help"><![CDATA[Los valores de autocompletar se derivan de la siguiente manera:
+        <li>El formato de Hora/Fecha y el idioma se obtienen de la configuración del teléfono.</li>
+        <li>El tono de botón se apaga si el teléfono está en modo No molestar (DnD), y se enciende en caso contrario.</li>
+        <li>El ahorro de energía se activará si el nivel de batería es del 15%% o menos.</li>
+        Nota: <i>Los valores no cambiarán hasta que se envíen nuevamente, incluso si las condiciones cambian (es decir, si se activa o desactiva el DnD).</i>
+        ]]>
+    </string>
+    <string name="cancel">Cancelar</string>
+    <string name="ok">Aceptar</string>
+
+    <string name="info_home_time">
+        <![CDATA[<b>Hora local</b> muestra la zona horaria del reloj.
+        Cuando la aplicación configure la hora del reloj (ya sea manual o automáticamente), también establecerá la <b>Hora local,
+        Desplazamiento horario</b> y <b>horario de verano</b> (si corresponde) a la zona horaria actual. Así que no es necesario cambiar tu <b>Hora mundial</b> y <b>Hora local</b>
+        cuando viajes a otra zona horaria.]]>
+    </string>
+    <string name="time_adjustment_info"><![CDATA[
+    <li><b>Ajuste de hora</b> permite que la aplicación actualice automáticamente la hora del reloj 4 veces al día.</li>
+    <li>Al mismo tiempo, la aplicación actualizará los <b>Recordatorios (Eventos)</b> del reloj desde tu <b>Google Calendar</b> si está habilitada la acción <b>Configurar recordatorios desde Google Calendar</b></li>
+    ]]></string>
+
+    <string name="auto_light">Luz automática</string>
+
+    <string name="illumination_period">Periodo de iluminación</string>
+    <string name="mm_dd">MM:DD</string>
+    <string name="dd_mm">DD:MM</string>
+    <string name="time_adjustment">Time Adjustment</string>
+    <string name="notify_me">Notificarme</string>
+    <string name="timer">Temporizador</string>
+
+    <string name="no_watch">Sin reloj</string>
+    <string name="set_time">Configurar hora</string>
+    <string name="find_phone">Buscar teléfono</string>
+    <string name="set_reminders">Establecer recordatorios\nGoogle Calendar</string>
+    <string name="take_photo">Tomar una foto</string>
+    <string name="toggle_flashlight">Alternar linterna</string>
+    <string name="start_voice_assistant">Iniciar asistente de voz</string>
+    <string name="next_track">Saltar a la siguiente pista</string>
+    <string name="play_pause">Reproducción/Pausa</string>
+    <string name="play_pause_info"><![CDATA[Alterna entre reproducción y pausa para el reproductor de medios actual en tu teléfono (Spotify, YouTube, etc.).]]></string>
+    <string name="emergency_actions">Acciones de emergencia:</string>
+    <string name="make_phonecall">Hacer una llamada telefónica</string>
+    <string name="adjustment_time_info"><![CDATA[
+        <li>El ajuste automático de la hora ocurre 4 veces al día, en algún momento después de las 12:00 AM, 6:00 AM, 12:00 PM y 6:00 PM.</li>
+        <li>Esta configuración establece el número de minutos después de la hora en que ocurre el ajuste de la hora. Por ejemplo, si configuras este valor en 25, el ajuste de la hora ocurrirá a las 12:25 AM, 6:25 AM, 12:25 PM y 6:25 PM.</li>
+        <li>Si tienes varios relojes, puedes controlar cuándo establecer la hora individualmente.</li>
+    ]]></string>
+    <string name="adjustment_time_minutes">Cuándo ejecutar\n(minutos después de la hora)</string>
+    <string name="skip_to_next_track_info"><![CDATA[
+        Si estás reproduciendo música o un video en un reproductor de medios como Spotify, YouTube o YTMusic en tu teléfono, esta acción saltará a la siguiente canción o video.
+        También funciona con Android Auto
+    ]]></string>
+    <string name="set_prayer_alarms">Alarmas oración</string>
+    <string name="prayer_times_info"><![CDATA[
+        <li>Esta acción configurará las 5 alarmas del reloj para las oraciones musulmanas <b>Fajr</b>, <b>Dhuhr</b>, <b>Asr</b>, <b>Maghrib</b> y <b>Isha</b>.</li>
+        <li>Los horarios varían según tu ubicación y la fecha actual, por lo que para obtener la mejor precisión, ejecuta esta acción a diario.
+        Si esta acción está habilitada, las alarmas también se actualizarán automáticamente durante el ajuste automático de la hora, 4 veces al día.</li>
+        <li>Se utilizan los siguientes métodos de cálculo, según tu ubicación:
+            <b>AMÉRICA DEL NORTE</b>,
+            <b>DİYANET</b>,
+            <b>EGIPCIO</b>,
+            <b>EMIRATOS ÁRABES UNIDOS</b>,
+            <b>UMM AL QURA</b>,
+            <b>QATAR</b>,
+            <b>SINGAPUR</b>,
+            <b>KUWAIT</b> y
+            <b>LA LIGA MUSULMANA MUNDIAL</b> en otros lugares.
+        </li>
+        <li>Para sugerencias y correcciones contacta a <a href="mailto:izivkov@gmail.com">izivkov@gmail.com</a></li>
+    ]]></string>
+
+    <string name="enter_timer_time">Introducir tiempo del temporizador</string>
+    <string name="max_reminders_reached">Número máximo de recordatorios alcanzado, por favor desactiva algunos antes de seleccionar nuevos</string>
+
+    <string name="fine_adjustment_info"><![CDATA[
+        Al configurar la hora, algunos modelos de reloj pueden mostrar una hora que está ligeramente desfasada algunos segundos. Esta configuración te permite ajustar finamente el ajuste de la hora.
+        El valor, en milisegundos, se agrega a la hora enviada desde la app al reloj. Puedes configurar valores entre -5000 y 5000. Por ejemplo,
+        si tu reloj está 2.5 segundos adelantado respecto a la hora real, configura este valor en -2500 para sincronizarlo con precisión.
+    ]]></string>
+    <string name="required_permissions_denied_cannot_access_screen">Permisos requeridos denegados. ¡No se puede acceder a la pantalla!</string>
+    <string name="required_permissions_denied_cannot_access_actions">Permisos requeridos denegados. No se puede acceder a las acciones.</string>
+    <string name="calendar_permission_denied_cannot_access_events">Permiso de calendario denegado. No se puede acceder a los eventos.</string>
+    <string name="clear_app_storage_from_android_setting_and_restart_the_app_to_add_permissions">"Borrar el almacenamiento de la app desde la configuración de Android y reiniciar la app para agregar permisos."</string>
+    <string name="phone_number">Número de teléfono</string>
+    <string name="enter_phone_number">Introducir número de teléfono</string>
+    <string name="when_to_run">Cuándo ejecutar</string>
+    <string name="minutes_between_0_and_59">Minutos entre 0 y 59</string>
+    <string name="fine_adjustment">Ajuste fino</string>
+    <string name="ms_between_10000_and_10000">ms entre -10000 y 10000</string>
+
+    <string name="sending_time_to_watch">Enviando hora al reloj…</string>
+    <string name="time_set">Hora configurada</string>
+    <string name="apierror_ensure_the_official_g_shock_app_is_not_running">¡ApiError! Asegúrese de que la aplicación oficial G-Shock no esté en ejecución.</string>
+    <string name="bluetooth_is_not_enabled">Bluetooth no está habilitado.</string>
+    <string name="disconnected_due_to_inactivity">Desconectado debido a inactividad.</string>
+    <string name="when_found_lift_phone_to_stop_ringing">Cuando lo encuentre, levante el teléfono para detener el timbre</string>
+    <string name="voice_assistant_not_available_on_this_device">¡Asistente de voz no disponible en este dispositivo!</string>
+    <string name="cannot_go_to_next_track">¡No se puede ir a la siguiente pista!</string>
+    <string name="image_captured">Imagen capturada: %1$s</string>
+
+    <string name="camera_capture_error">Error al capturar imagen: %1$s</string>
+    <string name="flashlight_not_available">Linterna no disponible</string>
+    <string name="unable_to_get_default_sound_uri">No se puede obtener el URI de sonido predeterminado</string>
+    <string name="alarms_set_to_watch">Alarmas configuradas en el reloj</string>
+
+    <string name="reminders_sent_to_watch">Recordatorios enviados al reloj</string>
+
+    <string name="settings_sent_to_watch">Configuraciones enviadas al reloj</string>
+    <string name="sorry_your_device_does_not_support_bluetooth_exiting">Lo siento, su dispositivo no soporta Bluetooth. Saliendo…</string>
+    <string name="permission_required_to_turn_on_bluetooth">Se requieren permisos para activar Bluetooth.</string>
+    <string name="you_have_no_permissions_to_turn_on_bluetooth_please_turn_it_on_manually">No tiene permisos para activar Bluetooth. Por favor, actívelo manualmente.</string>
+    <string name="permissions_are_permanently_denied_please_enable_them_in_the_app_settings">Los permisos están permanentemente denegados. Habilítelos en la configuración de la aplicación.</string>
+    <string name="you_have_not_given_permission_to_to_run_action">No ha otorgado permiso para ejecutar la acción %1$s.</string>
+    <string name="timer_set">Temporizador configurado</string>
+    <string name="press_and_hold_for_3_seconds">Mantén\n3 seg</string>
+    <string name="short_press_to_run_actions">Pulsar para\nacciones</string>
+
+    <string name="cover_hold_to_unlock">Mantén presionado para desbloquear</string>
+    <string name="cover_connected">Conectado</string>
+    <!-- "h" is commonly used for "hora" in Spanish as well -->
+    <string name="find_phone_instruction">Para ejecutar acciones, inicia la función "Buscar teléfono" en el reloj</string>
+    <string name="actions_saved">Acciones guardadas</string>
+    <string name="press_and_hold_connection_button_to_continue">Mantén pulsado el botón de CONEXIÓN (normalmente el inferior izquierdo) de tu reloj durante 3 segundos para emparejarlo.</string>
+    <string name="looking_for_a_device">Buscando un dispositivo.</string>
+    <string name="add_watch">Añadir reloj</string>
+    <string name="local_solar_time">Hora Solar Local</string>
+    <string name="local_mean_time">Hora Media Local</string>
+    <string name="sidereal_time">Tiempo sidéreo</string>
+    <string name="time_zone_info"><![CDATA[
+        <li><b>Sistema:</b> Usa la zona horaria actual del teléfono.</li>
+        <li><b>Hora Media Local:</b> Calculada según su longitud. Un grado equivale a 4 minutos de diferencia con respecto al UTC.</li>
+        <li><b>Hora Solar Local:</b> Calculada según la posición del sol (Ecuación del Tiempo). El mediodía es cuando el sol está en su punto más alto.</li>
+        <li><b>Tiempo sidéreo:</b> Calculado basándose en la rotación de la Tierra en relación con las estrellas. Un día sidéreo es aproximadamente 4 minutos más corto que un día solar.</li>
+    ]]></string>
+</resources>

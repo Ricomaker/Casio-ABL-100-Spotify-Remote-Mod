@@ -1,0 +1,131 @@
+package org.avmedia.gshockGoogleSync
+
+import android.bluetooth.BluetoothDevice
+import android.content.Intent
+import android.provider.Settings
+import android.app.AlertDialog
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import org.avmedia.gshockGoogleSync.data.repository.GShockRepository
+import org.avmedia.gshockGoogleSync.services.NotificationMonitorService
+import org.avmedia.gshockGoogleSync.utils.ActivityProvider
+import org.avmedia.gshockGoogleSync.utils.Utils
+import org.avmedia.gshockapi.AppNotification
+import org.avmedia.gshockapi.EventAction
+import org.avmedia.gshockapi.ProgressEvents
+import timber.log.Timber
+import java.util.concurrent.Executors
+import java.util.concurrent.TimeUnit
+
+class MainEventHandler(
+    private val context: GShockApplication,
+    private val repository: GShockRepository,
+    private val screenManager: IScreenManager,
+    private val actionsViewModel: org.avmedia.gshockGoogleSync.ui.actions.ActionsViewModel
+) {
+    fun setupEventSubscription() {
+        val eventActions = arrayOf(
+            EventAction("ConnectionSetupComplete") { Timber.i("EVENT: ConnectionSetupComplete") },
+            EventAction("WatchInitializationCompleted") { 
+                Timber.i("EVENT: WatchInitializationCompleted")
+                handleWatchInitialization() 
+            },
+            EventAction("ConnectionFailed") { 
+                Timber.i("EVENT: ConnectionFailed")
+                handleConnectionFailure() 
+            },
+            EventAction("Error") { handleError() },
+            EventAction("WaitForConnection") { 
+                Timber.i("EVENT: WaitForConnection")
+                handleWaitForConnection() 
+            },
+            EventAction("Disconnect") { 
+                Timber.i("EVENT: Disconnect")
+                handleDisconnect() 
+            },
+            EventAction("HomeTimeUpdated") { Timber.i("EVENT: HomeTimeUpdated") },
+            EventAction("RunActions") { 
+                Timber.i("EVENT: RunActions")
+                handleRunAction() 
+            },
+            EventAction("AppNotification") { handleAppNotification() },
+            EventAction("LocationServicesDisabled") { handleLocationServicesDisabled() }
+        )
+
+        ProgressEvents.runEventActions(Utils.AppHashCode(), eventActions)
+    }
+
+    private fun handleWatchInitialization() {
+        if (repository.supportsAppNotifications()) {
+            NotificationMonitorService.startService(context)
+        }
+        
+        screenManager.showContentSelector(repository)
+    }
+
+    private fun handleAppNotification() {
+        if (repository.supportsAppNotifications()) {
+            val appNotification = ProgressEvents.getPayload("AppNotification") as AppNotification?
+            if (appNotification != null) {
+                repository.sendAppNotification(appNotification)
+            }
+        }
+    }
+
+    private fun handleConnectionFailure() {
+        Timber.e("Failed to connect to the watch")
+    }
+
+    private fun handleRunAction() {
+        // Do nothing - stay on Music Remote screen to keep interactions silent
+    }
+
+    private fun handleError() {
+        val payload = ProgressEvents.getPayload("Error") as String?
+        val message = payload
+            ?: context.getString(
+                R.string.apierror_ensure_the_official_g_shock_app_is_not_running
+            )
+        Timber.e("API Error event. payload=${payload ?: "<none, using default message>"}")
+
+        repository.disconnect()
+        screenManager.showError(message)
+        screenManager.showPreConnectionScreen()
+    }
+
+    private fun handleDisconnect() {
+        ProgressEvents.getPayload("Disconnect")?.let { device ->
+            repository.teardownConnection(device as BluetoothDevice)
+        }
+
+        Executors.newSingleThreadScheduledExecutor().schedule({
+            screenManager.showInitialScreen()
+        }, 0L, TimeUnit.SECONDS)
+    }
+
+    private fun handleWaitForConnection() {
+        CoroutineScope(Dispatchers.Default).launch {
+            context.deviceAssociationManager.checkPairedDevicesOrNotify()
+        }
+    }
+
+    private fun handleLocationServicesDisabled() {
+        CoroutineScope(Dispatchers.Main).launch {
+            val activity = ActivityProvider.getCurrentActivity() ?: run {
+                Timber.e("No activity available to show location services dialog")
+                return@launch
+            }
+
+            AlertDialog.Builder(activity)
+                .setTitle("Location Services Required")
+                .setMessage("Android requires Location Services to be enabled for Bluetooth scanning. This app does not use your location — it is an Android system requirement.")
+                .setPositiveButton("Open Settings") { _, _ ->
+                    activity.startActivity(Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS))
+                }
+                .setNegativeButton("Cancel", null)
+                .setCancelable(false)
+                .show()
+        }
+    }
+}
