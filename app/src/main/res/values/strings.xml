@@ -1,5 +1,5 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="app_name" translatable="false">ABL-100 Media Control</string>
+    <string name="app_name" translatable="false">ABL-100 Music Remote</string>
     <string name="events">Events</string>
     <string name="alarms">Alarms</string>
     <string name="time">Time</string>
