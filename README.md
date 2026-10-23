@@ -24,6 +24,17 @@ An experimental Android music remote for the **Casio ABL-100**, based on [izivko
 
 **Updates:** Keep the same app installed and install newer releases over it when available. Do not uninstall just to update unless troubleshooting requires it; uninstalling may erase local settings. The publicly signed remix has its own Android app identity and may install alongside an older/debug build.
 
+### Does the app need to stay open?
+
+**No — you normally do not need to keep the app visible.** The remix initializes its watch-button listener at app startup, allowing music controls to work while the app is minimized or the phone screen is locked, provided Android and Bluetooth keep the connection/background service active.
+
+- **App on screen or minimized:** Controls should work when the watch is connected.
+- **Phone locked:** Controls should generally still work.
+- **App swiped away:** Behavior varies by Android version and phone manufacturer; background restrictions may interrupt it.
+- **App force-stopped:** Controls generally stop until you open the app again.
+
+For better reliability, grant the requested Bluetooth and Notification Access permissions and, if necessary, set the app's battery usage to **Unrestricted** / **Don't optimize** in Android Settings (this may increase battery use). To test, connect the watch, return to your home screen, lock your phone, and try play/pause. Background behavior has not been verified across all Android phones.
+
 ### Quick start
 
 1. Install and open this **remix build** (not the upstream release).
