@@ -19,7 +19,7 @@ An experimental Android music remote for the **Casio ABL-100**, based on [izivko
 2. **Bluetooth:** Grant the requested Nearby devices/Bluetooth permissions. To initiate a normal watch connection, hold the ABL-100's **lower-left button until the second beep**.
 3. **Notification access:** In Android Settings, enable **Notification access** for *ABL-100 Music Remote*. This lets the app find active music sessions, including Spotify and compatible players.
 4. **Battery restrictions:** For more reliable background controls, consider setting this app's battery usage to **Unrestricted** or **Don't optimize** (the name and location vary by phone). This can use a little more battery.
-5. **If the watch won't connect:** Try pausing or closing Spotify temporarily, connect the watch first, and then resume music. Check that the app has the requested permissions.
+5. **If the watch won't connect:** Fully close Spotify (rather than just pausing it), connect the watch, then reopen Spotify. Pausing alone may not help because a watch command can resume playback. Check that the app has the requested permissions.
 6. **Allow for occasional delay:** The ABL-100 is not a dedicated Bluetooth music remote. Commands can sometimes respond slowly or inconsistently, even when the setup is working.
 
 **Updates:** Keep the same app installed and install newer releases over it when available. Do not uninstall just to update unless troubleshooting requires it; uninstalling may erase local settings. The publicly signed remix has its own Android app identity and may install alongside an older/debug build.
@@ -42,7 +42,7 @@ For better reliability, grant the requested Bluetooth and Notification Access pe
 3. Grant the app the necessary Bluetooth and **Notification Access** permissions for media-session control.
 4. Open **Music Remote** to set quiet and loud volume levels, then use the watch button actions above.
 
-**Status and limitations:** This is a personal experimental modification tested with the **ABL-100 only**. Bluetooth triggering can be delayed or inconsistent, and the media app sometimes affects connection behavior; temporarily pausing Spotify during initial pairing may help. The modified source is on the `abl100-local-backup` branch and UI refinements on `ui/abl100-clear-controls-branding`. A signed APK is available as [v1.0.0](https://github.com/Ricomaker/Casio-ABL-100-Spotify-Remote-Mod/releases/tag/v1.0.0), tested by the maintainer on their own ABL-100; other phones and watch models are not yet broadly verified. Other Casio models are not verified for the remix.
+**Status and limitations:** This is a personal experimental modification tested with the **ABL-100 only**. Bluetooth triggering can be delayed or inconsistent, and the media app sometimes affects connection behavior; fully closing Spotify before connecting, then reopening it afterward, may help; simply pausing it may trigger playback again. The modified source is on the `abl100-local-backup` branch and UI refinements on `ui/abl100-clear-controls-branding`. A signed APK is available as [v1.0.0](https://github.com/Ricomaker/Casio-ABL-100-Spotify-Remote-Mod/releases/tag/v1.0.0), tested by the maintainer on their own ABL-100; other phones and watch models are not yet broadly verified. Other Casio models are not verified for the remix.
 
 **Credit and license:** Based on the original work by **izivkov**. Keep the upstream attribution, LICENSE file and license notices when redistributing. This is an unofficial community modification, not a Casio or Spotify product.
 
