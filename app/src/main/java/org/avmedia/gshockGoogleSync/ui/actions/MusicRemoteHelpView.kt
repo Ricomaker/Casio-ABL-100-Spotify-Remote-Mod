@@ -27,10 +27,10 @@ fun MusicRemoteHelpView() {
                 fontWeight = FontWeight.Bold
             )
             
-            HelpRow("Hold bottom-right button", "Play or pause music")
-            HelpRow("Press bottom-right button", "Switch between quiet and loud volume")
-            HelpRow("Hold bottom-left button", "Skip to the next song")
-            HelpRow("Press top-left button", "Reset the controls")
+            HelpRow("Hold bottom-right until the second beep", "Play or pause music")
+            HelpRow("Tap bottom-right button", "Toggle between quiet and loud volume")
+            HelpRow("Hold bottom-left until the second beep", "Skip to the next song")
+            HelpRow("Tap top-left button", "Reset the controls")
 
             AppText(
                 text = "Works with supported music apps on your phone. Allow notification access for media controls to work.",
