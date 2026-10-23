@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp" android:height="108dp"
+    android:viewportWidth="108" android:viewportHeight="108">
+    <!-- Original, neutral watch + music icon, centered in the adaptive icon safe area. -->
+    <path android:fillColor="#FFFFFFFF"
+        android:pathData="M42,18 L66,18 L69,33 L69,75 L66,90 L42,90 L39,75 L39,33 Z"/>
+    <path android:fillColor="#FF182333"
+        android:pathData="M35,32 L73,32 Q77,32 77,36 L77,72 Q77,76 73,76 L35,76 Q31,76 31,72 L31,36 Q31,32 35,32 Z"/>
+    <path android:fillColor="#FFFF4B53"
+        android:pathData="M57,40 L67,38 L67,59 C65,57 61,57 59,59 C57,61 57,65 60,66 C65,68 70,64 70,60 L70,44 L57,47 Z"/>
+    <path android:strokeColor="#FFFFFFFF" android:strokeWidth="2"
+        android:fillColor="#00000000" android:pathData="M39,38 L49,38 M39,43 L49,43 M39,48 L47,48"/>
+</vector>
