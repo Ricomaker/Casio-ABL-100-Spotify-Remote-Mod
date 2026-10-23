@@ -2,6 +2,16 @@
 
 An experimental Android music remote for the **Casio ABL-100**, based on [izivkov's Casio G-Shock Smart Sync](https://github.com/izivkov/CasioGShockSmartSync). This branch adds an ABL-100-focused music-control interface and watch-button handling. The original project's broader feature descriptions and documentation are retained below for reference; they are **not** claims that this remix has been tested with all those models.
 
+## ⚠️ Experimental — important limitations
+
+This is a hobby project and a fun way to control Android music from a Casio ABL-100, **not a fast or fully reliable replacement for your phone's music controls**.
+
+- **Volume toggle:** In testing on one ABL-100, allow approximately **10–15 seconds between volume commands**. Repeated presses too quickly may seem to do nothing.
+- **Bluetooth responsiveness:** Some watch commands may be delayed or inconsistent. The exact behavior may vary by phone and connection conditions.
+- **Compatibility:** Tested on the **Casio ABL-100 only**. Other Casio models and Android phones have not been thoroughly tested.
+
+Think of it as a fun experimental mod — more of a party trick than an everyday remote.
+
 ## Features of this ABL-100 remix
 
 - **Play/pause from the watch:** hold the **bottom-right** button until the second beep.
@@ -20,7 +30,7 @@ An experimental Android music remote for the **Casio ABL-100**, based on [izivko
 3. **Notification access:** In Android Settings, enable **Notification access** for *ABL-100 Music Remote*. This lets the app find active music sessions, including Spotify and compatible players.
 4. **Battery restrictions:** For more reliable background controls, consider setting this app's battery usage to **Unrestricted** or **Don't optimize** (the name and location vary by phone). This can use a little more battery.
 5. **If Spotify interferes when entering the watch's settings:** Fully close Spotify before trying to enter the settings on the ABL-100. Pausing Spotify alone may not help because a watch button press can start playback again. Reopen Spotify after you finish in the watch's settings. Check that the app has the requested permissions.
-6. **Allow for occasional delay:** The ABL-100 is not a dedicated Bluetooth music remote. Commands can sometimes respond slowly or inconsistently, even when the setup is working.
+6. **Allow time between commands:** In particular, wait approximately **10–15 seconds between volume-toggle presses** based on testing on one ABL-100. Other commands may also be delayed or inconsistent.
 
 **Updates:** Keep the same app installed and install newer releases over it when available. Do not uninstall just to update unless troubleshooting requires it; uninstalling may erase local settings. The publicly signed remix has its own Android app identity and may install alongside an older/debug build.
 
